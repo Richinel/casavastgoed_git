@@ -1,0 +1,46 @@
+@max-width:	1300px;
+@width:		90%;
+
+body {
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px !important;
+}
+
+.wrapper {
+	width: @width;
+	max-width: @max-width;
+	margin: auto;
+	position: relative;
+}
+
+.nav {
+	height: 100px;
+
+	.nav_info {
+		border-bottom: 1px solid #cccccc;
+		position: relative;
+		height: 35px;
+
+		.wrapper {
+
+			.phone {
+				position: absolute;
+				right: 0;
+				line-height: 35px;
+				border-left: 1px solid #cccccc;
+				border-right: 1px solid #cccccc;
+				padding: 0 15px;
+
+				i {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+
+	img {
+		height: 60px;
+		margin: 10px 0;
+	}
+}
