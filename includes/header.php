@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Casa Vastgoed</title>
+	<title><?php echo $title; ?> | Casa Vastgoed</title>
+
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/kube.css">
@@ -34,5 +36,7 @@
 				<li>Contact</li>
 				<li>Renovatie & Onderhoud</li>
 			</ul>
+
+			<i class="fa fa-bars menu_btn" aria-hidden="true"></i>
 		</div>
 	</div>

@@ -3,6 +3,37 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 13px !important;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 100;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #0047b3;
+  text-decoration: underline;
+}
+.btn {
+  border: 1px solid #003380;
+  max-width: 150px;
+  width: 90%;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #003380;
+  transition: 75ms ease-in;
+}
+.btn:hover {
+  background-color: #003380;
+  color: white;
+}
 .wrapper {
   width: 90%;
   max-width: 1300px;
@@ -10,8 +41,7 @@ body {
   position: relative;
 }
 .nav {
-  height: 100px;
-  border-bottom: 1px solid #e6e6e6;
+  min-height: 100px;
 }
 .nav .nav_info {
   border-bottom: 1px solid #e6e6e6;
@@ -31,7 +61,7 @@ body {
 }
 .nav img {
   height: 50px;
-  margin: 6px 0;
+  margin: 10px 0;
 }
 .nav .wrapper {
   position: relative;
@@ -49,9 +79,78 @@ body {
   font-size: 16px;
   margin-left: 25px;
   opacity: 0.85;
-  line-height: 65px;
+  line-height: 70px;
 }
 .nav .wrapper ul li:hover {
   color: #005ce6;
   opacity: 1.0;
+}
+.nav .menu_btn {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 35px;
+  color: #003380;
+  display: none;
+}
+.main_slider {
+  background-image: url('../images/panorama1.jpg');
+  height: 300px;
+}
+.main_slider h2 {
+  color: white;
+  font-weight: 100;
+  display: block;
+  margin: auto;
+  text-align: center;
+  line-height: 300px;
+}
+.main_info {
+  padding: 40px 0;
+}
+.main_info .wrapper .margin_col {
+  margin-bottom: 40px;
+}
+.main_info .wrapper .btn {
+  display: block;
+  margin: auto;
+}
+footer {
+  padding: 40px 0;
+  color: white;
+  background-color: #003380;
+}
+footer .wrapper {
+  text-align: center;
+}
+footer .wrapper a {
+  color: white;
+  text-decoration: none;
+}
+footer .wrapper a:hover {
+  text-decoration: underline;
+}
+footer .wrapper h3 {
+  color: grey;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+footer .wrapper hr {
+  margin: 20px 0;
+}
+@media screen and (max-width: 950px) {
+  .nav .wrapper ul {
+    display: none;
+  }
+  .nav .wrapper .menu_btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .nav .nav_info .wrapper .phone {
+    border: none;
+    margin: auto;
+    position: relative !important;
+    text-align: center;
+  }
 }
