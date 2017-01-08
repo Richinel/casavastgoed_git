@@ -25,5 +25,14 @@
 
 		<div class="wrapper">
 			<img src="assets/images/casavastgoed.png">
+
+			<ul>
+				<li>Home</li>
+				<li>Aanbod</li>
+				<li>Diensten</li>
+				<li>Inschrijven</li>
+				<li>Contact</li>
+				<li>Renovatie & Onderhoud</li>
+			</ul>
 		</div>
 	</div>

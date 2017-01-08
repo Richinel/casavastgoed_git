@@ -11,9 +11,10 @@ body {
 }
 .nav {
   height: 100px;
+  border-bottom: 1px solid #e6e6e6;
 }
 .nav .nav_info {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #e6e6e6;
   position: relative;
   height: 35px;
 }
@@ -21,14 +22,34 @@ body {
   position: absolute;
   right: 0;
   line-height: 35px;
-  border-left: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
   padding: 0 15px;
 }
 .nav .nav_info .wrapper .phone i {
   margin-right: 10px;
 }
 .nav img {
-  height: 60px;
-  margin: 10px 0;
+  height: 50px;
+  margin: 6px 0;
+}
+.nav .wrapper {
+  position: relative;
+}
+.nav .wrapper ul {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.nav .wrapper ul li {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 25px;
+  opacity: 0.85;
+}
+.nav .wrapper ul li:hover {
+  color: #005ce6;
+  opacity: 1.0;
 }
