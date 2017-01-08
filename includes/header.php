@@ -26,15 +26,17 @@
 		</div>
 
 		<div class="wrapper">
-			<img src="assets/images/casavastgoed.png">
+			<a href="index">
+				<img src="assets/images/casavastgoed.png">
+			</a>
 
 			<ul>
 				<li>Home</li>
 				<li>Aanbod</li>
 				<li>Diensten</li>
 				<li>Inschrijven</li>
-				<li>Contact</li>
 				<li>Renovatie & Onderhoud</li>
+				<li>Contact</li>
 			</ul>
 
 			<i class="fa fa-bars menu_btn" aria-hidden="true"></i>
