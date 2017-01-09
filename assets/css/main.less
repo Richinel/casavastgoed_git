@@ -100,6 +100,7 @@ a {
 					margin-left: 25px;
 					opacity: 0.85;
 					line-height: 70px;
+					transition: 75ms ease-in;
 
 					&:hover {
 						color: @blue;
@@ -112,7 +113,7 @@ a {
 	.menu_btn {
 		position: absolute;
 		right: 0;
-		top: 20px;
+		top: 10px;
 		font-size: 35px;
 		color: @darkblue;
 		display: none;
@@ -180,6 +181,11 @@ footer {
 @media screen and (max-width: 950px) {
 	.nav {
 		.wrapper {
+			img {
+				display: block;
+				margin: 10px auto 10px auto;
+			}
+
 			ul {
 				display: none;
 			}

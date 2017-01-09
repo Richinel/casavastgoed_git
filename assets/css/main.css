@@ -80,6 +80,7 @@ a:hover {
   margin-left: 25px;
   opacity: 0.85;
   line-height: 70px;
+  transition: 75ms ease-in;
 }
 .nav .wrapper ul li:hover {
   color: #005ce6;
@@ -88,7 +89,7 @@ a:hover {
 .nav .menu_btn {
   position: absolute;
   right: 0;
-  top: 20px;
+  top: 10px;
   font-size: 35px;
   color: #003380;
   display: none;
@@ -139,6 +140,10 @@ footer .wrapper hr {
   margin: 20px 0;
 }
 @media screen and (max-width: 950px) {
+  .nav .wrapper img {
+    display: block;
+    margin: 10px auto 10px auto;
+  }
   .nav .wrapper ul {
     display: none;
   }
