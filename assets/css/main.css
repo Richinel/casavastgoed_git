@@ -17,22 +17,38 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #0047b3;
+  color: #003d9a;
   text-decoration: underline;
 }
 .btn {
-  border: 1px solid #003380;
+  border: 1px solid #002966;
   max-width: 150px;
   width: 90%;
   padding: 10px 0;
   text-align: center;
   text-transform: uppercase;
-  color: #003380;
+  color: #002966;
   transition: 75ms ease-in;
 }
 .btn:hover {
-  background-color: #003380;
+  background-color: #002966;
   color: white;
+}
+.btn-sm {
+  padding: 5px 0;
+  background-color: #002966;
+  max-width: 80px;
+  width: 90%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  transition: 75ms ease-in;
+  font-size: 12px;
+}
+.btn-sm:hover {
+  background-color: transparent;
+  color: #002966;
+  border: 1px solid #002966;
 }
 .wrapper {
   width: 90%;
@@ -91,7 +107,7 @@ a:hover {
   right: 0;
   top: 10px;
   font-size: 35px;
-  color: #003380;
+  color: #002966;
   display: none;
 }
 .main_slider {
@@ -109,17 +125,46 @@ a:hover {
 .main_info {
   padding: 40px 0;
 }
-.main_info .wrapper .margin_col {
-  margin-bottom: 40px;
-}
 .main_info .wrapper .btn {
-  display: block;
+  margin: 20px auto 0px auto;
+}
+.information_blocks {
+  padding-bottom: 40px;
+}
+.information_blocks .wrapper .row {
+  margin: 0 !important;
+}
+.information_blocks .wrapper .row .col {
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  padding: 15px;
+  position: relative;
+}
+.information_blocks .wrapper .row .col i {
+  font-size: 35px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: white;
+}
+.information_blocks .wrapper .row .col p {
+  margin-bottom: 50px;
+}
+.information_blocks .wrapper .row .col:nth-child(2) {
+  margin: 0 50px;
+}
+.information_blocks .wrapper .row .col .btn-sm {
   margin: auto;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin-top: 20px;
 }
 footer {
   padding: 40px 0;
   color: white;
-  background-color: #003380;
+  background-color: #002966;
 }
 footer .wrapper {
   text-align: center;
@@ -139,6 +184,13 @@ footer .wrapper h3 {
 footer .wrapper hr {
   margin: 20px 0;
 }
+.offers {
+  border-top: 1px solid #e6e6e6;
+  padding: 40px 0;
+}
+.offers .wrapper .btn {
+  margin: auto;
+}
 @media screen and (max-width: 950px) {
   .nav .wrapper img {
     display: block;
@@ -149,6 +201,14 @@ footer .wrapper hr {
   }
   .nav .wrapper .menu_btn {
     display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .information_blocks .wrapper .row .col {
+    margin-bottom: 40px !important;
+  }
+  .information_blocks .wrapper .row .col:nth-child(2) {
+    margin: 0px;
   }
 }
 @media screen and (max-width: 450px) {

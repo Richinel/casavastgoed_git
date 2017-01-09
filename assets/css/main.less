@@ -2,7 +2,7 @@
 @width:		90%;
 @grey:		#e6e6e6;
 @blue:		#005ce6;
-@darkblue:	darken(#0047b3, 10%);
+@darkblue:	darken(#0047b3, 15%);
 
 body {
 	background-color: white;
@@ -43,6 +43,24 @@ a {
 	&:hover {
 		background-color: @darkblue;
 		color: white;
+	}
+}
+
+.btn-sm {
+	padding: 5px 0;
+	background-color: @darkblue;
+	max-width: 80px;
+	width: 90%;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	transition: 75ms ease-in;
+	font-size: 12px;
+
+	&:hover {
+		background-color: transparent;
+		color: @darkblue;
+		border: 1px solid @darkblue;
 	}
 }
 
@@ -138,13 +156,50 @@ a {
 	padding: 40px 0;
 
 	.wrapper {
-		.margin_col {
-			margin-bottom: 40px;
-		}
-
 		.btn {
-			display: block;
-			margin: auto;
+			margin: 20px auto 0px auto;
+		}
+	}
+}
+
+.information_blocks {
+	padding-bottom: 40px;
+
+	.wrapper {
+		.row {
+			margin: 0 !important;
+
+			.col {
+				text-align: center;
+				border: 1px solid @grey;
+				padding: 15px;
+				position: relative;
+
+				i {
+					font-size: 35px;
+					border: 1px solid @grey;
+					border-radius: 50%;
+					padding: 20px;
+					background-color: white;
+				}
+
+				p {
+					margin-bottom: 50px;
+				}
+
+				&:nth-child(2) {
+					margin: 0 50px;
+				}
+
+				.btn-sm {
+					margin: auto;
+					position: absolute;
+					bottom: 15px;
+					left: 0;
+					right: 0;
+					margin-top: 20px;
+				}
+			}
 		}
 	}
 }
@@ -178,6 +233,18 @@ footer {
 	}
 }
 
+.offers {
+	border-top: 1px solid @grey;
+	padding: 40px 0;
+
+	.wrapper {
+
+		.btn {
+			margin: auto;
+		}
+	}
+}
+
 @media screen and (max-width: 950px) {
 	.nav {
 		.wrapper {
@@ -192,6 +259,22 @@ footer {
 
 			.menu_btn {
 				display: block;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.information_blocks {
+		.wrapper {
+			.row {
+				.col {
+					margin-bottom: 40px !important;
+
+					&:nth-child(2) {
+						margin: 0px;
+					}
+				}
 			}
 		}
 	}
