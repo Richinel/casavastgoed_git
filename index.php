@@ -54,9 +54,11 @@
 		<div class="wrapper">
 			<h3>Weet u niet waar u moet beginnen, of heeft u een vraag over een woning?</h3>
 
-			<div class="btn_white">
-				Neem direct contact op
-			</div>
+			<a href="contact">
+				<div class="btn_white">
+					Neem direct contact op
+				</div>
+			</a>
 		</div>
 	</div>
 

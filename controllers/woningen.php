@@ -15,7 +15,6 @@
 
 								<span class='label outline ".$row['labelstatus']."'>".$row['status']."</span>
 
-								Badkamer(s): ".$row['badkamers']."<br>
 								Kamers: ".$row['kamers']."
 
 								<p class='price'>

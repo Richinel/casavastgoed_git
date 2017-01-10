@@ -206,6 +206,7 @@ a:hover {
   max-width: 100px;
   padding: 5px 0;
   font-size: 12px;
+  margin-bottom: 15px;
 }
 .fp_offers .wrapper .row .col .offer .info .price {
   font-size: 20px;
