@@ -12,6 +12,7 @@
 
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
 	<script src="assets/js/cycle2.js"></script>
+	<script src="assets/js/functions.js"></script>
 
 </head>
 <body>
@@ -32,8 +33,8 @@
 			</a>
 
 			<ul>
-				<li>Home</li>
-				<li>Aanbod</li>
+				<li><a href="index">Home</a></li>
+				<li>Aanbod <i class="fa fa-caret-down down" aria-hidden="true"></i></li>
 				<li>Diensten</li>
 				<li>Inschrijven</li>
 				<li>Renovatie & Onderhoud</li>

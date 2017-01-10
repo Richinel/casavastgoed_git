@@ -115,6 +115,9 @@ a:hover {
   color: #005ce6;
   opacity: 1.0;
 }
+.nav .wrapper ul li .down {
+  margin-left: 2px;
+}
 .nav .menu_btn {
   position: absolute;
   right: 0;
@@ -206,16 +209,66 @@ a:hover {
   right: 0;
   margin-top: 20px;
 }
-.contact {
-  padding-bottom: 40px;
+.contact .c_text {
+  padding: 40px 0;
+  background-color: #f3f3f3;
+}
+.contact .c_text h2 {
+  font-weight: 100;
+  color: #005ce6;
+  text-align: center;
+}
+.contact .c_text hr {
+  width: 40%;
+  min-width: 200px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.contact .c_text p {
+  text-align: center;
+}
+.contact .c_form {
+  padding: 40px 0;
+}
+.contact .c_form h4 {
+  color: #005ce6;
+}
+.contact .c_form p {
+  text-align: left;
+}
+.contact .c_form i {
+  color: #002966;
+  font-size: 30px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.contact .c_form .contact_form input {
+  width: 100%;
+  margin: 10px 0;
+  border-color: #003d9a;
+  opacity: 0.6;
+}
+.contact .c_form .contact_form input:hover {
+  opacity: 1.0;
+}
+.contact .c_form .contact_form textarea {
+  text-align: left !important;
+  margin-top: 10px;
+  height: 150px;
+  border-color: #003d9a;
+  opacity: 0.6;
+}
+.contact .c_form .contact_form textarea:hover {
+  opacity: 1.0;
+}
+.contact .c_form .contact_form .btn {
+  width: 100%;
+  max-width: 300px;
 }
 .contact iframe {
   width: 100%;
-  height: 300px;
-}
-.contact .wrapper h3 {
-  font-weight: 100;
-  color: #005ce6;
+  height: 250px;
+  margin-bottom: -7px;
 }
 footer {
   padding: 40px 0;
