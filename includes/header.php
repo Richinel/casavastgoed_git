@@ -34,6 +34,7 @@
 
 </head>
 <body>
+<?php include('includes/mobile_menu.php'); ?>
 
 	<div class="nav">
 		<div class="nav_info">
