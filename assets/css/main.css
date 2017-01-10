@@ -34,6 +34,20 @@ a:hover {
   background-color: #002966;
   color: white;
 }
+.btn_white {
+  border: 1px solid white;
+  max-width: 150px;
+  width: 90%;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  transition: 75ms ease-in;
+}
+.btn_white:hover {
+  background-color: white;
+  color: black;
+}
 .btn-sm {
   padding: 5px 0;
   background-color: #002966;
@@ -128,8 +142,22 @@ a:hover {
 .main_info .wrapper .btn {
   margin: 20px auto 0px auto;
 }
+.contact_div {
+  background: url('../images/realestate.jpg');
+  background-size: 100%;
+  background-position: center center;
+  min-height: 200px;
+  padding: 50px 0;
+}
+.contact_div .wrapper h3 {
+  color: white;
+  text-align: center;
+}
+.contact_div .wrapper .btn_white {
+  margin: auto;
+}
 .information_blocks {
-  padding-bottom: 40px;
+  padding: 40px;
 }
 .information_blocks .wrapper .row {
   margin: 0 !important;
@@ -183,13 +211,6 @@ footer .wrapper h3 {
 }
 footer .wrapper hr {
   margin: 20px 0;
-}
-.offers {
-  border-top: 1px solid #e6e6e6;
-  padding: 40px 0;
-}
-.offers .wrapper .btn {
-  margin: auto;
 }
 @media screen and (max-width: 950px) {
   .nav .wrapper img {

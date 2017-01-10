@@ -46,6 +46,22 @@ a {
 	}
 }
 
+.btn_white {
+	border: 1px solid white;
+	max-width: 150px;
+	width: 90%;
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	transition: 75ms ease-in;
+
+	&:hover {
+		background-color: white;
+		color: black;
+	}
+}
+
 .btn-sm {
 	padding: 5px 0;
 	background-color: @darkblue;
@@ -162,10 +178,30 @@ a {
 	}
 }
 
-.information_blocks {
-	padding-bottom: 40px;
+.contact_div {
+	background: url('../images/realestate.jpg');
+	background-size: 100%;
+	background-position: center center;
+	min-height: 200px;
+	padding: 50px 0;
 
 	.wrapper {
+		h3 {
+			color: white;
+			text-align: center;
+		}
+
+		.btn_white {
+			margin: auto;
+		}
+	}
+}
+
+.information_blocks {
+	padding: 40px;
+
+	.wrapper {
+
 		.row {
 			margin: 0 !important;
 
@@ -229,18 +265,6 @@ footer {
 
 		hr {
 			margin: 20px 0;
-		}
-	}
-}
-
-.offers {
-	border-top: 1px solid @grey;
-	padding: 40px 0;
-
-	.wrapper {
-
-		.btn {
-			margin: auto;
 		}
 	}
 }

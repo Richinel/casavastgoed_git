@@ -29,6 +29,16 @@
 		</div>
 	</div>
 
+	<div class="contact_div">
+		<div class="wrapper">
+			<h3>Wij hebben een ruim aanbod aan zowel koop als huurwoningen</h3>
+
+			<div class="btn_white">
+				Bekijk aanbod
+			</div>
+		</div>
+	</div>
+
 	<div class="information_blocks">
 		<div class="wrapper">
 			<div class="row between">
