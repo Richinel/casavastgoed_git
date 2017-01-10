@@ -11,7 +11,9 @@
 		<img class="cv" src="assets/images/cv_logo_notext.png">
 
 		<div class="wrapper">
-			<h5>"Our solution is your solution"</h5>
+			<div class="bar">
+				<h3>Our solution is your solution</h3>
+			</div>
 
 			<div class="row">
 				<div class="col">
@@ -27,6 +29,23 @@
 
 			<div class="btn">
 				Lees meer
+			</div>
+		</div>
+	</div>
+
+	<div class="fp_offers">
+		<div class="wrapper">
+
+			<div class="bar">
+				<h3>Laatste woningen</h3>
+			</div>
+	
+			<div class="row between">
+				<?php include('controllers/woningen.php'); ?>
+			</div>
+
+			<div class="btn">
+				Bekijk alles
 			</div>
 		</div>
 	</div>
