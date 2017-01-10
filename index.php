@@ -12,7 +12,7 @@
 
 		<div class="wrapper">
 			<div class="bar">
-				<h3>Our solution is your solution</h3>
+				<h4>Our solution is your solution</h4>
 			</div>
 
 			<div class="row">
@@ -37,7 +37,7 @@
 		<div class="wrapper">
 
 			<div class="bar">
-				<h3>Laatste woningen</h3>
+				<h4>Laatste woningen</h4>
 			</div>
 	
 			<div class="row between">

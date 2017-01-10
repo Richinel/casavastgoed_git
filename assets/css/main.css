@@ -107,10 +107,10 @@ a:hover {
 }
 .mobile_menu .closemm {
   position: absolute;
-  top: 2px;
-  right: 15px;
+  top: -10px;
+  right: 5px;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
 }
 .mobile_menu .wrapper {
@@ -216,11 +216,12 @@ a:hover {
   left: -270px;
   opacity: 0.05;
   transform: rotate(-10deg);
-  top: 20px;
+  top: 250px;
 }
-.main_info .wrapper h3 {
+.main_info .wrapper h4 {
   text-align: center;
   padding: 0 15px;
+  opacity: 0.7;
 }
 .main_info .wrapper .btn {
   margin: 20px auto 0px auto;
@@ -228,8 +229,9 @@ a:hover {
 .fp_offers {
   padding-bottom: 40px;
 }
-.fp_offers h3 {
+.fp_offers h4 {
   padding: 0 15px;
+  opacity: 0.7;
 }
 .fp_offers .wrapper .row .col:nth-child(2) {
   margin: 0 50px;
@@ -336,7 +338,7 @@ a:hover {
   content: '';
   display: table-cell;
   position: relative;
-  top: 16px;
+  top: 12px;
   width: 300px;
 }
 .bar:after {
@@ -344,7 +346,7 @@ a:hover {
   content: '';
   display: table-cell;
   position: relative;
-  top: 16px;
+  top: 12px;
   width: 300px;
 }
 .contact .c_text {
@@ -483,7 +485,7 @@ footer .wrapper hr {
     position: relative !important;
     text-align: center;
   }
-  .main_info .wrapper h3 {
+  .main_info .wrapper h4 {
     padding: 0;
   }
 }
