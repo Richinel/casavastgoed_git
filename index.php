@@ -8,8 +8,10 @@
 	</div>
 
 	<div class="main_info">
+		<img class="cv" src="assets/images/cv_logo_notext.png">
+
 		<div class="wrapper">
-			<h5>Our solution is your solution</h5>
+			<h5>"Our solution is your solution"</h5>
 
 			<div class="row">
 				<div class="col">
@@ -31,10 +33,10 @@
 
 	<div class="contact_div">
 		<div class="wrapper">
-			<h3>Wij hebben een ruim aanbod aan zowel koop als huurwoningen</h3>
+			<h3>Weet u niet waar u moet beginnen, of heeft u een vraag over een woning?</h3>
 
 			<div class="btn_white">
-				Bekijk aanbod
+				Neem direct contact op
 			</div>
 		</div>
 	</div>
@@ -57,7 +59,7 @@
 				</div>
 
 				<div class="col">
-					<i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+					<i class="fa fa-eur" aria-hidden="true"></i>
 
 					<h4>Woning kopen?</h4>
 						<hr>

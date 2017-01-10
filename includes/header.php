@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
+	<script src="assets/js/cycle2.js"></script>
 
 </head>
 <body>
@@ -36,7 +37,7 @@
 				<li>Diensten</li>
 				<li>Inschrijven</li>
 				<li>Renovatie & Onderhoud</li>
-				<li>Contact</li>
+				<li><a href="contact">Contact</a></li>
 			</ul>
 
 			<i class="fa fa-bars menu_btn" aria-hidden="true"></i>

@@ -48,7 +48,6 @@ a {
 
 .btn_white {
 	border: 1px solid white;
-	max-width: 150px;
 	width: 90%;
 	padding: 10px 0;
 	text-align: center;
@@ -156,6 +155,7 @@ a {
 
 .main_slider {
 	background-image: url('../images/panorama1.jpg');
+	background-position: center center;
 	height: 300px;
 
 	h2 {
@@ -170,8 +170,22 @@ a {
 
 .main_info {
 	padding: 40px 0;
+	position: relative;
+
+	.cv {
+		position: absolute;
+		left: -270px;
+		opacity: 0.05;
+		transform: rotate(-10deg);
+		top: 20px;
+	}
 
 	.wrapper {
+		h5 {
+			text-align: center;
+		}
+
+
 		.btn {
 			margin: 20px auto 0px auto;
 		}
@@ -189,16 +203,18 @@ a {
 		h3 {
 			color: white;
 			text-align: center;
+			margin-bottom: 20px;
 		}
 
 		.btn_white {
 			margin: auto;
+			max-width: 250px;
 		}
 	}
 }
 
 .information_blocks {
-	padding: 40px;
+	padding: 40px 0;
 
 	.wrapper {
 
@@ -210,12 +226,16 @@ a {
 				border: 1px solid @grey;
 				padding: 15px;
 				position: relative;
+				box-shadow: 0 0 10px #ccc;
 
 				i {
 					font-size: 35px;
 					border: 1px solid @grey;
 					border-radius: 50%;
-					padding: 20px;
+					width: 80px;
+					height: 80px;
+					line-height: 80px;
+					margin-bottom: 10px;
 					background-color: white;
 				}
 
@@ -236,6 +256,22 @@ a {
 					margin-top: 20px;
 				}
 			}
+		}
+	}
+}
+
+.contact {
+	padding-bottom: 40px;
+
+	iframe {
+		width: 100%;
+		height: 300px;
+	}
+
+	.wrapper {
+		h3 {
+			font-weight: 100;
+			color: @blue;
 		}
 	}
 }
