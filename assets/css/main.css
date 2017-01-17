@@ -2,6 +2,7 @@ body {
   background-color: white;
   font-family: 'Open Sans', sans-serif;
   font-size: 13px !important;
+  padding-top: 100px;
 }
 h1,
 h2,
@@ -14,7 +15,7 @@ h6 {
 }
 a {
   color: black;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:hover {
   color: #003d9a;
@@ -138,6 +139,14 @@ a:hover {
 }
 .nav {
   min-height: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  background-color: white;
+  border-bottom: 1px solid #e6e6e6;
+  box-shadow: 0 0 15px #ccc;
 }
 .nav .nav_info {
   border-bottom: 1px solid #e6e6e6;
@@ -241,7 +250,6 @@ a:hover {
   text-align: center;
   border: 1px solid #e6e6e6;
   padding: 20px 0;
-  box-shadow: 0 0 10px #ccc;
 }
 .fp_offers .wrapper .row .col .offer .info img {
   height: 300px;
@@ -297,10 +305,8 @@ a:hover {
 }
 .information_blocks .wrapper .row .col {
   text-align: center;
-  border: 1px solid #e6e6e6;
   padding: 15px;
   position: relative;
-  box-shadow: 0 0 10px #ccc;
 }
 .information_blocks .wrapper .row .col i {
   font-size: 35px;
@@ -325,6 +331,8 @@ a:hover {
   left: 0;
   right: 0;
   margin-top: 20px;
+  color: #002966;
+  background: white;
 }
 .bar {
   display: table;
@@ -351,11 +359,11 @@ a:hover {
 }
 .contact .c_text {
   padding: 40px 0;
-  background-color: #f3f3f3;
+  background: url('../images/city.jpg');
 }
 .contact .c_text h2 {
   font-weight: 100;
-  color: #005ce6;
+  color: white;
   text-align: center;
 }
 .contact .c_text hr {
@@ -366,6 +374,7 @@ a:hover {
 }
 .contact .c_text p {
   text-align: center;
+  color: #ffffff;
 }
 .contact .c_form {
   padding: 40px 0;

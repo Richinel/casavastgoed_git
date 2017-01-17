@@ -71,7 +71,7 @@
 					<h4>Woning huren?</h4>
 						<hr>
 					<p>
-						Bent u geïnteresseerd in een woning op onze website? Wilt u meer informatie of een afspraak maken om de woning te bezichtigen? Neem dan contact met ons op per telefoon.
+						Bent u ge&iuml;nteresseerd in een woning op onze website? Wilt u meer informatie of een afspraak maken om de woning te bezichtigen? Neem dan contact met ons op per telefoon.
 					</p>
 
 					<div class="btn-sm">

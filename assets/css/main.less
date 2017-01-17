@@ -9,6 +9,7 @@ body {
 	background-color: white;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px !important;
+	padding-top: 100px;
 }
 
 h1,
@@ -23,7 +24,7 @@ h6 {
 
 a {
 	color: black;
-	text-decoration: none;
+	text-decoration: none !important;
 
 	&:hover {
 		color: lighten(@darkblue, 10%);
@@ -167,6 +168,14 @@ a {
 
 .nav {
 	min-height: 100px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 99;
+	background-color: white;
+	border-bottom: 1px solid @grey;
+	box-shadow: 0 0 15px #ccc;
 
 	.nav_info {
 		border-bottom: 1px solid @grey;
@@ -299,7 +308,7 @@ a {
 					text-align: center;
 					border: 1px solid @grey;
 					padding: 20px 0;
-					box-shadow: 0 0 10px #ccc;
+					//box-shadow: 0 0 10px #ccc;
 
 					.info {
 
@@ -376,10 +385,10 @@ a {
 
 			.col {
 				text-align: center;
-				border: 1px solid @grey;
+				//border: 1px solid @grey;
 				padding: 15px;
 				position: relative;
-				box-shadow: 0 0 10px #ccc;
+				//box-shadow: 0 0 10px #ccc;
 
 				i {
 					font-size: 35px;
@@ -398,6 +407,9 @@ a {
 
 				&:nth-child(2) {
 					margin: 0 50px;
+					//padding: 15px 70px;
+					//border-left: 1px solid @grey;
+					//border-right: 1px solid @grey;
 				}
 
 				.btn-sm {
@@ -407,6 +419,8 @@ a {
 					left: 0;
 					right: 0;
 					margin-top: 20px;
+					color: @darkblue;
+					background: white;
 				}
 			}
 		}
@@ -444,11 +458,11 @@ a {
 
 	.c_text {
 		padding: 40px 0;
-		background-color: lighten(@grey, 5%);
+		background: url('../images/city.jpg');
 
 		h2 {
 			font-weight: 100;
-			color: @blue;
+			color: white;
 			text-align: center;
 		}
 
@@ -461,6 +475,7 @@ a {
 
 		p {
 			text-align: center;
+			color: white
 		}
 	}
 
