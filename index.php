@@ -40,13 +40,15 @@
 				<h4>Laatste woningen</h4>
 			</div>
 	
-			<div class="row between">
+			<div class="row between equal">
 				<?php include('controllers/woningen.php'); ?>
 			</div>
 
-			<div class="btn">
-				Bekijk alles
-			</div>
+			<a href="woningen">
+				<div class="btn">
+					Bekijk alles
+				</div>
+			</a>
 		</div>
 	</div>
 

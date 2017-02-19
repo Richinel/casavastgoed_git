@@ -1,7 +1,7 @@
 <?php
 	include('dbconnect.php');
 
-	$sql = "SELECT * FROM aanbod";
+	$sql = "SELECT * FROM aanbod LIMIT 3";
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {

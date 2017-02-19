@@ -2,7 +2,7 @@
 	$title = "Contact"; 
 	include('includes/header.php'); ?>
 
-	<div class="contact">
+	<div class="content">
 		<div class="c_text">
 			<div class="wrapper">
 				<h2>Contact</h2>

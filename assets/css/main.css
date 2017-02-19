@@ -21,6 +21,27 @@ a:hover {
   color: #003d9a;
   text-decoration: underline;
 }
+.content {
+  padding-top: 10px;
+  margin-bottom: -30px;
+}
+.banner {
+  width: 100%;
+  height: 200px;
+  background: black;
+  color: white;
+  margin-bottom: 40px;
+  display: table;
+  text-align: center;
+}
+.banner .container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.banner .container h2 {
+  color: white;
+  text-align: center;
+}
 .btn {
   border: 1px solid #002966;
   max-width: 150px;
@@ -36,6 +57,36 @@ a:hover {
   background-color: #002966;
   color: white;
 }
+.btn-sm {
+  border: 1px solid #002966;
+  max-width: 150px;
+  width: 90%;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #002966;
+  transition: 75ms ease-in;
+}
+.btn-sm:hover {
+  background-color: #002966;
+  color: white;
+}
+.btn-sm-o {
+  border: 1px solid #002966;
+  max-width: 100px;
+  width: 90%;
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #002966;
+  transition: 75ms ease-in;
+}
+.btn-sm-o:hover {
+  background-color: #002966;
+  color: white;
+}
 .btn_white {
   border: 1px solid white;
   width: 90%;
@@ -48,38 +99,6 @@ a:hover {
 .btn_white:hover {
   background-color: white;
   color: black;
-}
-.btn-sm {
-  padding: 5px 0;
-  background-color: #002966;
-  max-width: 80px;
-  width: 90%;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  transition: 75ms ease-in;
-  font-size: 12px;
-  border: 1px solid #002966;
-}
-.btn-sm:hover {
-  background-color: transparent;
-  color: #002966;
-}
-.btn-sm-o {
-  padding: 5px 0;
-  background-color: white;
-  max-width: 80px;
-  width: 90%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #002966;
-  transition: 75ms ease-in;
-  font-size: 12px;
-  border: 1px solid #002966;
-}
-.btn-sm-o:hover {
-  background-color: darkblue;
-  color: white;
 }
 .mobile_menu {
   position: fixed;
@@ -139,7 +158,7 @@ a:hover {
 }
 .nav {
   min-height: 100px;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -153,16 +172,33 @@ a:hover {
   position: relative;
   height: 35px;
 }
-.nav .nav_info .wrapper .phone {
+.nav .nav_info .wrapper .pre_nav {
   position: absolute;
   right: 0;
   line-height: 35px;
+  width: auto;
   border-left: 1px solid #e6e6e6;
   border-right: 1px solid #e6e6e6;
-  padding: 0 15px;
 }
-.nav .nav_info .wrapper .phone i {
+.nav .nav_info .wrapper .pre_nav .phone {
+  padding: 0 15px;
+  display: inline;
+  height: 35px;
+}
+.nav .nav_info .wrapper .pre_nav .phone i {
   margin-right: 10px;
+}
+.nav .nav_info .wrapper .pre_nav .login {
+  padding: 0 15px;
+  display: inline;
+}
+.nav .nav_info .wrapper .pre_nav .login .divider {
+  position: absolute;
+  right: 83px;
+  width: 1px;
+  background: #e6e6e6;
+  height: 35px;
+  display: inline;
 }
 .nav img {
   height: 50px;
@@ -203,8 +239,23 @@ a:hover {
   cursor: pointer;
   display: none;
 }
+.submenu {
+  position: absolute;
+  top: 65px;
+  width: 150px;
+  min-height: 70px;
+  line-height: 70px;
+  background: white;
+  text-align: center;
+  visibility: hidden;
+  box-shadow: 0 0 20px #ccc;
+}
+._nav:hover .submenu {
+  visibility: visible;
+}
 .main_slider {
   background-image: url('../images/panorama1.jpg');
+  background-attachment: fixed;
   background-position: center center;
   height: 300px;
 }
@@ -248,7 +299,7 @@ a:hover {
 .fp_offers .wrapper .row .col .offer {
   color: black;
   text-align: center;
-  border: 1px solid #e6e6e6;
+  border: 13px solid #e6e6e6;
   padding: 20px 0;
 }
 .fp_offers .wrapper .row .col .offer .info img {
@@ -256,6 +307,7 @@ a:hover {
   width: auto;
   display: block;
   margin: 0px auto 25px auto;
+  object-fit: cover;
 }
 .fp_offers .wrapper .row .col .offer .info h4 {
   text-align: center;
@@ -277,12 +329,80 @@ a:hover {
 .fp_offers .wrapper .row .col .offer .info .btn-sm-o {
   display: block;
   margin: auto;
+  max-width: 100% !important;
 }
 .fp_offers .btn {
   margin: 30px auto 0 auto;
 }
+.offers {
+  padding-bottom: 40px;
+}
+.offers h4 {
+  padding: 0 15px;
+  opacity: 0.7;
+}
+.offers .wrapper .row .col {
+  margin-bottom: 30px;
+}
+.offers .wrapper .row .col .offer {
+  color: black;
+  text-align: center;
+  border: 13px solid #e6e6e6;
+  padding: 20px 0;
+}
+.offers .wrapper .row .col .offer .info img {
+  height: 300px;
+  width: auto;
+  display: block;
+  margin: 0px auto 25px auto;
+  object-fit: cover;
+}
+.offers .wrapper .row .col .offer .info h4 {
+  text-align: center;
+}
+.offers .wrapper .row .col .offer .info .label {
+  display: block;
+  margin: auto;
+  min-width: 70px;
+  max-width: 100px;
+  padding: 5px 0;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.offers .wrapper .row .col .offer .info .price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.offers .wrapper .row .col .offer .info .btn-sm-o {
+  display: block;
+  margin: auto;
+  max-width: 100% !important;
+}
+.offers .btn {
+  margin: 30px auto 0 auto;
+}
+.main {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.main_content {
+  padding-bottom: 80px;
+}
+.house_offer b {
+  font-size: 16px;
+}
+.house_offer .btn {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.house_offer h2 {
+  margin-bottom: 20px;
+}
 .contact_div {
   background: url('../images/realestate.jpg');
+  background-attachment: fixed;
   background-size: 100%;
   background-position: center center;
   min-height: 200px;
@@ -357,64 +477,70 @@ a:hover {
   top: 12px;
   width: 300px;
 }
-.contact .c_text {
+.content .c_text {
   padding: 40px 0;
   background: url('../images/city.jpg');
+  display: table;
+  width: 100%;
 }
-.contact .c_text h2 {
+.content .c_text .wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.content .c_text .wrapper h2 {
   font-weight: 100;
   color: white;
   text-align: center;
 }
-.contact .c_text hr {
+.content .c_text .wrapper hr {
   width: 40%;
   min-width: 200px;
   margin: auto;
   margin-bottom: 20px;
 }
-.contact .c_text p {
+.content .c_text .wrapper p {
   text-align: center;
   color: #ffffff;
 }
-.contact .c_form {
+.content .c_form {
   padding: 40px 0;
 }
-.contact .c_form h4 {
+.content .c_form h4 {
   color: #005ce6;
 }
-.contact .c_form p {
+.content .c_form p {
   text-align: left;
 }
-.contact .c_form i {
+.content .c_form i {
   color: #002966;
   font-size: 30px;
   padding-right: 20px;
   padding-top: 20px;
 }
-.contact .c_form .contact_form input {
+.content .c_form .contact_form input {
   width: 100%;
   margin: 10px 0;
   border-color: #003d9a;
   opacity: 0.6;
 }
-.contact .c_form .contact_form input:hover {
+.content .c_form .contact_form input:hover {
   opacity: 1.0;
 }
-.contact .c_form .contact_form textarea {
+.content .c_form .contact_form textarea {
   text-align: left !important;
   margin-top: 10px;
   height: 150px;
   border-color: #003d9a;
   opacity: 0.6;
 }
-.contact .c_form .contact_form textarea:hover {
+.content .c_form .contact_form textarea:hover {
   opacity: 1.0;
 }
-.contact .c_form .contact_form .btn {
+.content .c_form .contact_form .btn {
   width: 100%;
   max-width: 300px;
 }
-.contact iframe {
+.content iframe {
   width: 100%;
   height: 250px;
   margin-bottom: -7px;
@@ -468,6 +594,9 @@ footer .wrapper hr {
   .mobile_menu .wrapper .row .col {
     margin-bottom: 50px;
   }
+  .content {
+    padding-top: 0px !important;
+  }
   .fp_offers .wrapper .row .col {
     margin-bottom: 40px !important;
   }
@@ -476,6 +605,18 @@ footer .wrapper hr {
   }
   .fp_offers .wrapper .row .col:nth-child(3) {
     margin-bottom: 0px;
+  }
+  .main {
+    margin-top: 40px;
+    padding-bottom: 70px;
+  }
+  .main img {
+    display: block;
+    margin: auto auto 30px auto;
+  }
+  .main h2,
+  .main h3 {
+    text-align: center;
   }
   .information_blocks .wrapper .row .col {
     margin-bottom: 40px !important;
@@ -488,13 +629,19 @@ footer .wrapper hr {
   }
 }
 @media screen and (max-width: 450px) {
-  .nav .nav_info .wrapper .phone {
+  .nav .nav_info .wrapper .pre_nav .phone {
     border: none;
     margin: auto;
     position: relative !important;
     text-align: center;
   }
+  .nav .nav_info .wrapper .pre_nav .login {
+    display: none;
+  }
   .main_info .wrapper h4 {
     padding: 0;
   }
+}
+.breadcrumb {
+  margin-top: 10px;
 }

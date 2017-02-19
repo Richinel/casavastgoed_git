@@ -32,12 +32,71 @@ a {
 	}
 }
 
+.content {
+	padding-top: 10px;
+	margin-bottom: -30px;
+}
+
+.banner {
+	width: 100%;
+	height: 200px;
+	background: black;
+	color: white;
+	margin-bottom: 40px;
+	display: table;
+	text-align: center;
+
+	.container {
+		display: table-cell;
+		vertical-align: middle;
+
+		h2 {
+			color: white;
+			text-align: center;
+		}
+	}
+}
+
 .btn {
 	border: 1px solid @darkblue;
 	max-width: 150px;
 	width: 90%;
 	display: block;
 	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: @darkblue;
+	transition: 75ms ease-in;
+
+	&:hover {
+		background-color: @darkblue;
+		color: white;
+	}
+}
+
+.btn-sm {
+	border: 1px solid @darkblue;
+	max-width: 150px;
+	width: 90%;
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: @darkblue;
+	transition: 75ms ease-in;
+
+	&:hover {
+		background-color: @darkblue;
+		color: white;
+	}
+}
+
+.btn-sm-o {
+	border: 1px solid @darkblue;
+	max-width: 100px;
+	width: 90%;
+	display: block;
+	padding: 5px 0;
 	text-align: center;
 	text-transform: uppercase;
 	color: @darkblue;
@@ -61,42 +120,6 @@ a {
 	&:hover {
 		background-color: white;
 		color: black;
-	}
-}
-
-.btn-sm {
-	padding: 5px 0;
-	background-color: @darkblue;
-	max-width: 80px;
-	width: 90%;
-	text-align: center;
-	text-transform: uppercase;
-	color: white;
-	transition: 75ms ease-in;
-	font-size: 12px;
-	border: 1px solid @darkblue;
-
-	&:hover {
-		background-color: transparent;
-		color: @darkblue;
-	}
-}
-
-.btn-sm-o {
-	padding: 5px 0;
-	background-color: white;
-	max-width: 80px;
-	width: 90%;
-	text-align: center;
-	text-transform: uppercase;
-	color: @darkblue;
-	transition: 75ms ease-in;
-	font-size: 12px;
-	border: 1px solid @darkblue;
-
-	&:hover {
-		background-color: darkblue;
-		color: white;
 	}
 }
 
@@ -168,7 +191,7 @@ a {
 
 .nav {
 	min-height: 100px;
-	position: fixed;
+	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -184,16 +207,37 @@ a {
 
 		.wrapper {
 
-			.phone {
+			.pre_nav {
 				position: absolute;
 				right: 0;
 				line-height: 35px;
+				width: auto;
 				border-left: 1px solid @grey;
 				border-right: 1px solid @grey;
-				padding: 0 15px;
 
-				i {
-					margin-right: 10px;
+				.phone {					
+					padding: 0 15px;
+					display: inline;
+					height: 35px;
+
+					i {
+						margin-right: 10px;
+					}
+				}
+
+				.login {
+					//border-left: 1px solid @grey;
+					padding: 0 15px;
+					display: inline;
+
+					.divider {
+						position: absolute;
+						right: 83px;
+						width: 1px;
+						background: @grey;
+						height: 35px;
+						display: inline;
+					}
 				}
 			}
 		}
@@ -246,8 +290,25 @@ a {
 	}
 }
 
+.submenu {
+	position: absolute;
+	top: 65px;
+	width: 150px;
+	min-height: 70px;
+	line-height: 70px;
+	background: white;
+	text-align: center;
+	visibility: hidden;
+	box-shadow: 0 0 20px #ccc;
+}
+
+._nav:hover .submenu {
+	visibility: visible;
+}
+
 .main_slider {
 	background-image: url('../images/panorama1.jpg');
+	background-attachment: fixed;
 	background-position: center center;
 	height: 300px;
 
@@ -306,7 +367,7 @@ a {
 				.offer {
 					color: black;
 					text-align: center;
-					border: 1px solid @grey;
+					border: 13px solid @grey;
 					padding: 20px 0;
 					//box-shadow: 0 0 10px #ccc;
 
@@ -317,6 +378,7 @@ a {
 							width: auto;
 							display: block;
 							margin: 0px auto 25px auto;
+							object-fit: cover;
 						}
 
 						h4 {
@@ -342,6 +404,7 @@ a {
 						.btn-sm-o {
 							display: block;
 							margin: auto;
+							max-width: 100% !important;
 						}
 					}
 				}
@@ -354,8 +417,100 @@ a {
 		}
 }
 
+.offers {
+	padding-bottom: 40px;
+
+	h4 {
+		padding: 0 15px;
+		opacity: 0.7;
+	}
+
+	.wrapper {
+		.row {
+			.col {
+				margin-bottom: 30px;
+
+				.offer {
+					color: black;
+					text-align: center;
+					border: 13px solid @grey;
+					padding: 20px 0;
+					//box-shadow: 0 0 10px #ccc;
+
+					.info {
+
+						img {
+							height: 300px;
+							width: auto;
+							display: block;
+							margin: 0px auto 25px auto;
+							object-fit: cover;
+						}
+
+						h4 {
+							text-align: center;
+						}
+
+						.label {
+							display: block;
+							margin: auto;
+							min-width: 70px;
+							max-width: 100px;
+							padding: 5px 0;
+							font-size: 12px;
+							margin-bottom: 15px;
+						}
+
+						.price {
+							font-size: 20px;
+							font-weight: bold;
+							margin-top: 10px;
+						}
+
+						.btn-sm-o {
+							display: block;
+							margin: auto;
+							max-width: 100% !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.btn {
+			margin: 30px auto 0 auto;
+		}
+}
+
+.main {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.main_content {
+	padding-bottom: 80px;
+}
+
+.house_offer {
+	b {
+		font-size: 16px;
+	}
+
+	.btn {
+		margin-top: 40px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h2 {
+		margin-bottom: 20px;
+	}
+}
+
 .contact_div {
 	background: url('../images/realestate.jpg');
+	background-attachment: fixed;
 	background-size: 100%;
 	background-position: center center;
 	min-height: 200px;
@@ -454,28 +609,35 @@ a {
 	}
 }
 
-.contact {
+.content {
 
 	.c_text {
 		padding: 40px 0;
 		background: url('../images/city.jpg');
+		display:table;
+		width: 100%;
 
-		h2 {
-			font-weight: 100;
-			color: white;
-			text-align: center;
-		}
+		.wrapper {
+			display: table-cell;
+			vertical-align: middle;
 
-		hr {
-			width: 40%;
-			min-width: 200px;
-			margin: auto;
-			margin-bottom: 20px;
-		}
+			h2 {
+				font-weight: 100;
+				color: white;
+				text-align: center;
+			}
 
-		p {
-			text-align: center;
-			color: white
+			hr {
+				width: 40%;
+				min-width: 200px;
+				margin: auto;
+				margin-bottom: 20px;
+			}
+
+			p {
+				text-align: center;
+				color: white
+			}
 		}
 	}
 
@@ -607,7 +769,11 @@ footer {
 		}
 	}
 
-	.fp_offers {
+	.content {
+		padding-top: 0px !important;
+	}
+
+	.fp_offers,{
 		.wrapper {
 			.row {
 				.col {
@@ -622,6 +788,21 @@ footer {
 					}
 				}
 			}
+		}
+	}
+
+	.main {
+		margin-top: 40px;
+		padding-bottom: 70px;
+
+		img {
+			display: block;
+			margin: auto auto 30px auto;
+		}
+
+		h2,
+		h3 {
+			text-align: center;
 		}
 	}
 
@@ -648,11 +829,17 @@ footer {
 	.nav {
 		.nav_info {
 			.wrapper {
-				.phone {
-					border: none;
-					margin: auto;
-					position: relative !important;
-					text-align: center;
+				.pre_nav {
+					.phone {
+						border: none;
+						margin: auto;
+						position: relative !important;
+						text-align: center;
+					}
+
+					.login {
+						display: none;
+					}
 				}
 			}
 		}
@@ -665,4 +852,8 @@ footer {
 			}
 		}
 	}
+}
+
+.breadcrumb {
+	margin-top: 10px;
 }

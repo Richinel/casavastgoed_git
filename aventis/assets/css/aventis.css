@@ -1,0 +1,411 @@
+body {
+  font-family: 'Arsenal', sans-serif !important;
+}
+.wrapper {
+  max-width: 1300px;
+  width: 90%;
+  margin: auto;
+}
+.btn1 {
+  color: #660000;
+  border: 1px solid #660000;
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: 75ms ease-in;
+  cursor: pointer;
+}
+.btn1:hover {
+  color: white !important;
+  background: #660000;
+}
+.btn1 a:hover {
+  color: white;
+}
+.btn1_admin {
+  color: #55555d;
+  border: 1px solid #55555d;
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: 75ms ease-in;
+  cursor: pointer;
+}
+.btn1_admin:hover {
+  color: white !important;
+  background: #55555d;
+}
+.btn1_admin a:hover {
+  color: white;
+}
+.admin {
+  color: #55555d;
+  padding-top: 20px;
+}
+.admin h1,
+.admin h2,
+.admin h3,
+.admin h4,
+.admin h5,
+.admin h6 {
+  font-weight: 100 !important;
+  padding: 0;
+}
+.admin table {
+  margin-top: 40px;
+}
+.admin table th {
+  background: #4d4d4d;
+  color: white;
+  font-size: 20px;
+}
+.admin table th:nth-child(1) {
+  padding-left: 20px;
+}
+.admin table tr {
+  background-color: #f1f1f3;
+}
+.admin table tr td {
+  font-size: 17px;
+}
+.admin table tr td i {
+  padding: 0 5px;
+}
+.admin table tr td:nth-child(1) {
+  padding-left: 20px;
+}
+.admin .btn1_admin {
+  display: inline-block;
+  margin-right: 20px;
+}
+.h_admin {
+  padding-top: 0;
+  color: #55555d;
+  font-weight: 100;
+  text-align: left !important;
+}
+.last {
+  padding-right: 20px !important;
+}
+.admin_nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: url('../images/pattern1.png');
+  height: auto;
+  overflow: hidden;
+  color: #ffffff;
+  width: 300px;
+  z-index: 99999;
+  font-weight: 100 !important;
+}
+.admin_nav .cms_close_btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 25px;
+  color: white;
+  display: none;
+}
+.admin_nav img {
+  height: 100px;
+  display: none;
+  padding: 10px 0px;
+  margin: auto;
+}
+.admin_nav hr {
+  margin: 5px auto;
+  background: white;
+}
+.admin_nav ul {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.admin_nav ul li {
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 0 20px;
+  transition: 75ms ease-in;
+}
+.admin_nav ul li:hover {
+  background: #575757;
+}
+.admin_nav ul li i {
+  width: 35px;
+}
+.admin_gui {
+  padding-left: 300px;
+  margin: 50px auto auto auto;
+}
+.admin_gui .cms_navbar {
+  height: 50px;
+  background: #4d4d4d;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 300px;
+  right: 0;
+  line-height: 50px;
+  padding: 0 20px;
+  font-size: 25px;
+  text-align: center;
+  box-shadow: 0 0 15px grey;
+  z-index: 99;
+}
+.admin_gui .cms_navbar .cms_mnu_btn {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  font-size: 25px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+.admin_gui .cms_navbar a {
+  color: white;
+  position: absolute;
+  left: 20px;
+  top: -20px;
+}
+.admin_gui .cms_navbar .cms_navbar_i {
+  position: absolute;
+  top: -2px;
+  right: 25px;
+}
+.admin_gui .cms_navbar .cms_navbar_i i {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.admin_gui .cms_navbar .cms_navbar_i .tooltip {
+  position: absolute;
+  right: -80px;
+  top: 55px;
+  width: 200px;
+  display: none;
+}
+.admin_gui .cms_navbar .cms_navbar_i .tooltip .tooltip_add {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 5px 5px;
+  height: 20px;
+  line-height: 10px;
+  width: 75px;
+  margin-left: 30px;
+}
+.admin_gui h3 {
+  text-align: center;
+}
+.admin_gui img {
+  display: block;
+  margin: auto;
+}
+.admin_gui .info_p {
+  text-align: center;
+}
+.admin_gui label {
+  font-size: 20px;
+}
+.modal {
+  position: fixed;
+  top: -20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999999;
+  border-radius: 0;
+  display: none;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.modal::-webkit-scrollbar {
+  display: none;
+}
+.modal .close3 {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #55555d;
+  font-size: 30px;
+  cursor: pointer;
+}
+.modal .modal_window {
+  margin: 30px auto;
+  background: white;
+  box-shadow: 0 0 20px #ccc;
+  max-width: 800px;
+  width: 90%;
+  padding: 15px;
+  position: relative;
+}
+.modal form {
+  display: block;
+  margin: auto;
+}
+.modal form input {
+  width: 100%;
+  border-color: white;
+  background-color: #e4e4e6;
+  transition: 75ms ease-in;
+  margin-bottom: 25px;
+  color: black !important;
+}
+.modal form textarea {
+  width: 100%;
+  border-color: white;
+  background-color: #e4e4e6;
+  transition: 75ms ease-in;
+  margin-bottom: 30px;
+  color: black !important;
+  resize: none;
+  height: 300px;
+}
+.modal form .btn1 {
+  border: 1px solid #55555d;
+  color: grey;
+  background: white;
+  transition: 75ms ease-in;
+  margin-top: 20px !important;
+}
+.modal form .btn1:hover {
+  color: white;
+}
+.a_inverse {
+  color: white !important;
+  text-decoration: none;
+}
+.sortable th {
+  background-color: #660000;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 75ms ease-in;
+}
+.sortable th:nth-child(1) {
+  padding-left: 15px;
+}
+.sortable th:hover {
+  background: #990000;
+}
+.sortable tr {
+  cursor: pointer;
+  transition: 75ms ease-in;
+}
+.sortable tr:hover {
+  background: #fff5f5;
+}
+.sortable td {
+  padding-left: 15px;
+}
+.sortable td:nth-last-child(1) {
+  padding-right: 15px;
+}
+.description {
+  color: #4d4d4d;
+  padding-top: 10px;
+}
+.description h1,
+.description h2,
+.description h3,
+.description h4,
+.description h5,
+.description h6 {
+  font-size: 96%;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+.agenda_item {
+  margin-bottom: 30px;
+  cursor: auto;
+  padding-bottom: 10px;
+}
+.edit_btn {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+.admin_content {
+  min-width: 1080px;
+}
+.wrapper_admin {
+  margin-top: 20px !important;
+  width: 90%;
+  margin: auto;
+  overflow: auto;
+}
+.wrapper_admin .edit_form {
+  width: 100%;
+}
+.wrapper_admin .edit_form .form-item {
+  margin-bottom: 30px;
+}
+.wrapper_admin .edit_form input {
+  width: 100%;
+}
+.wrapper_admin .edit_form .ti_edit {
+  text-align: justify;
+  white-space: none;
+  resize: none;
+  height: 300px;
+}
+.wrapper_admin .edit_form .btn1 {
+  margin-top: 20px;
+}
+.login {
+  max-width: 400px;
+  margin: auto;
+}
+.login .login_wrapper {
+  width: 90%;
+  margin: auto;
+  height: auto;
+  padding-top: 20px;
+  font-family: 'Raleway', sans-serif !important;
+}
+.login .login_wrapper img {
+  height: 120px;
+  display: block;
+  margin: auto auto 50px auto;
+}
+.login .login_wrapper hr {
+  background: #4d4d4d;
+  margin: 10px auto;
+}
+.login .login_wrapper h4 {
+  color: #55555d;
+  font-weight: 100 !important;
+}
+.login .login_wrapper form input {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.login .login_wrapper form input:nth-child(1) {
+  margin-top: 10px;
+}
+.login .login_wrapper form .btn1_admin {
+  max-width: 100%;
+  padding: 10px 0;
+}
+.login .login_wrapper p {
+  text-align: center;
+}
+.login .login_wrapper .aventis {
+  position: fixed;
+  bottom: -25px;
+  right: 25px;
+  opacity: 0.1;
+}
