@@ -7,8 +7,6 @@
 			<div class="wrapper">
 				<h2>Contact</h2>
 
-				<hr>
-
 				<p>
 					Heeft u vragen over woningen, inschrijvingen, of heeft u misschien andere vragen? Neem dan contact met ons op via het onderstaande formulier. Wij zullen zo snel mogelijk contact met u op te nemen!
 				</p>
@@ -19,29 +17,7 @@
 
 		<div class="c_form">
 			<div class="wrapper">
-					<div class="row">
-					<div class="col col-4">
-						<h4>Bezoekadres</h4>
-						<p>
-							Nicolaas Anslijnstraat 25<br>
-							1068WL Amsterdam
-						</p>
-
-						<h4>Contactinformatie</h4>
-						<p>
-							06 - 87 65 72 46<br>
-							info@casa-vastgoed.nl
-						</p>
-
-						<p>
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-							<i class="fa fa-facebook-official" aria-hidden="true"></i>
-							<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-							<i class="fa fa-google-plus" aria-hidden="true"></i>
-						</p>
-
-					</div>	
-
+				<div class="row">
 					<div class="col col-8">
 						<h4>Contactformulier</h4>
 
@@ -74,7 +50,29 @@
 								<div class="btn">Verzenden</div>
 							</p>
 						</form>
-					</div>		
+					</div>	
+
+					<div class="col col-4">
+						<h4>Bezoekadres</h4>
+						<p>
+							Nicolaas Anslijnstraat 25<br>
+							1068WL Amsterdam
+						</p>
+
+						<h4>Contactinformatie</h4>
+						<p>
+							06 - 87 65 72 46<br>
+							info@casa-vastgoed.nl
+						</p>
+
+						<p>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<i class="fa fa-facebook-official" aria-hidden="true"></i>
+							<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
+						</p>
+
+					</div>	
 				</div>
 			</div>
 		</div>
