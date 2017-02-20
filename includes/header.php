@@ -54,7 +54,7 @@
 					</div>
 				</li>
 				<li class='_nav'>
-					Diensten
+					Diensten <i class="fa fa-caret-down down" aria-hidden="true"></i>
 					<div class="submenu">
 						<p>
 							<a href="huur">

@@ -165,7 +165,6 @@ a:hover {
   z-index: 99;
   background-color: white;
   border-bottom: 1px solid #e6e6e6;
-  box-shadow: 0 0 15px #ccc;
 }
 .nav .nav_info {
   border-bottom: 1px solid #e6e6e6;
@@ -215,7 +214,7 @@ a:hover {
 }
 .nav .wrapper ul li {
   display: inline-block;
-  height: 65px;
+  height: 85px;
   font-weight: bold;
   font-size: 16px;
   margin-left: 25px;
@@ -241,7 +240,7 @@ a:hover {
 }
 .submenu {
   position: absolute;
-  top: 65px;
+  top: 77px;
   width: 150px;
   min-height: 70px;
   line-height: 70px;
@@ -249,6 +248,7 @@ a:hover {
   text-align: center;
   visibility: hidden;
   box-shadow: 0 0 20px #ccc;
+  border-bottom: 1px solid #e6e6e6;
 }
 ._nav:hover .submenu {
   visibility: visible;
