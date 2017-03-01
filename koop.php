@@ -16,7 +16,7 @@
 		<div class="banner" style="background: url('assets/images/home2.jpg'); background-size: cover;">
 			<div class="container">
 				<div class="wrapper">
-					<h2>Diensten | Koop</h2>
+					<h2>Koop</h2>
 				</div>
 			</div>
 		</div>

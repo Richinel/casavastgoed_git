@@ -18,54 +18,73 @@
 
 		<div class="wrapper">
 			<div class="row blocks equal">
-				<?php
-				    include("controllers/dbconnect.php");
-				    $start      = 0;
-				    $limit      = 9;
-				     
-				    if(isset($_GET['id']))
-				    {
-				        $id     = $_GET['id'];
-				        $start  = ($id - 1 ) * $limit;
-				    }
-				    else{
-				        $id     = 1;
-				    }
-				    //Fetch from database first 10 items which is its limit. For that when page open you can see first 10 items. 
-				    $query          = mysqli_query($conn,"SELECT * FROM aanbod LIMIT $start, $limit");
-
-				    while($result = mysqli_fetch_array($query))
-				    {
-				       
-
-				        echo 
-				        "
-				            <div class='col col-4'>				        
-								<div class='offer'>
-									<div class='info'>
-										<img src='assets/images/".$result['afbeelding']."'>
-											<h4>".$result['adres'].", ".$result['stad']."</h4>
-
-											<span class='label outline ".$result['labelstatus']."'>".$result['status']."</span>
-
-											Kamers: ".$result['kamers']."
-
-											<p class='price'>
-												&euro; ".$result['prijs']."
-											</p>
-
-											<a href='house_offer.php?id=" . $result['id'] . "'>
-												<div class='btn-sm-o'>											
-													Meer info
-												</div>
-											</a>
-									</div>
-								</div>
+				<div class="row">
+					<!-- <div class="col col-2">
+						<h2>Filter</h2>
+							<div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
+								<button class="button" data-filter=".rotterdam">Rotterdam</button>
+							 	<button class="button" data-filter=".transition">transition</button>
+							  	<button class="button" data-filter=".alkali, .alkaline-earth">alkali and
 							</div>
-				        ";
+					</div> -->
 
-				    }
-				?>
+<!-- 					<div class="col col-10">
+						<div class="row"> -->
+							<?php
+							    include("controllers/dbconnect.php");
+							    $start      = 0;
+							    $limit      = 6;
+							     
+							    if(isset($_GET['id']))
+							    {
+							        $id     = $_GET['id'];
+							        $start  = ($id - 1 ) * $limit;
+							    }
+							    else{
+							        $id     = 1;
+							    }
+							    //Fetch from database first 10 items which is its limit. For that when page open you can see first 10 items. 
+							    $query          = mysqli_query($conn,"SELECT * FROM aanbod LIMIT $start, $limit");
+
+							    while($result = mysqli_fetch_array($query))
+							    {
+							       
+
+							        echo 
+							        "
+							            <div class='col col-12'>
+							            	<div class='container-offers'>
+							            	<table class='flat'>
+								            		<tr>
+								            			<td class='td'>
+								            				<img src='assets/images/" . $result['afbeelding'] . "' />
+								            			</td>
+								            			<td class='offer_content'>
+								            				<h4 class='locatie'> " . $result['adres'] . "</h4>
+								            				<h4 class='price'> &euro;" . $result['prijs'] . " </h4>
+
+								            				<small class='type'>" . $result['stad'] . "</small>
+								            				<p class='p'>
+								            					" . substr($result['beschrijving'], 0, 120)  . "...
+								            				</p>
+
+								            				<a href='house_offer.php?id=" . $result['id'] . "'>
+												            	<div class='btn-sm'>
+												            		Meer informatie
+												            	</div>
+												            </a>
+								            			</td>
+								            		</tr>
+								            	</table>
+							            	</div>
+							            </div>
+							        ";
+
+							    }
+							?>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<nav class="pagination centered">
@@ -114,6 +133,7 @@
 			    ?>
 			    </ul>
 			</nav>
+
 		</div>
 	</div>
 

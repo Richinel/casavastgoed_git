@@ -198,7 +198,7 @@ a {
 	z-index: 99;
 	background-color: white;
 	border-bottom: 1px solid @grey;
-	//box-shadow: 0 0 15px #ccc;
+	box-shadow: 0 0 15px #ccc;
 
 	.nav_info {
 		border-bottom: 1px solid @grey;
@@ -419,69 +419,78 @@ a {
 }
 
 .offers {
-	padding-bottom: 40px;
+	margin-bottom: 10px;
 
-	h4 {
-		padding: 0 15px;
-		opacity: 0.7;
-	}
+	.container-offers {
+		border: 1px solid @darkblue;
+		margin-bottom: 20px;
+		padding: 10px 10px 0px 10px;
+		border-radius: 3px;
+		transition: 75ms ease-in;
 
-	.wrapper {
-		.row {
-			.col {
-				margin-bottom: 30px;
+		.btn-sm {
+			color: white;
+			background: @darkblue;
+		}
 
-				.offer {
-					color: black;
-					text-align: center;
-					border: 13px solid @grey;
-					padding: 20px 0;
-					//box-shadow: 0 0 10px #ccc;
+		table {
 
-					.info {
+			tr {
+				position: relative;
+				border: none !important;
 
-						img {
-							height: 300px;
-							width: auto;
-							display: block;
-							margin: 0px auto 25px auto;
-							object-fit: cover;
-						}
+				.td {
+					width: 200px;
 
-						h4 {
-							text-align: center;
-						}
+					img {
+						height: 175px;
+						width: 175px;
+						object-fit: cover;
+						display: block;
+						margin: auto;
+						padding-right: 15px;
+					}
 
-						.label {
-							display: block;
-							margin: auto;
-							min-width: 70px;
-							max-width: 100px;
-							padding: 5px 0;
-							font-size: 12px;
-							margin-bottom: 15px;
-						}
+					h4 {
+						color: @darkblue;
+						margin-right: 60%;
+						font-weight: bold;
+						z-index: 22;
+					}
+				}
 
-						.price {
-							font-size: 20px;
-							font-weight: bold;
-							margin-top: 10px;
-						}
+				.p {
+					margin-right: 40px !important;
+				}
 
-						.btn-sm-o {
-							display: block;
-							margin: auto;
-							max-width: 100% !important;
-						}
+				.offer_content {
+					position: relative;
+
+					.price {
+						position: absolute;
+						right: 15px;
+						top: 20px;
+						color: @grey;
+						font-size: 50px;
+						transform: rotate(7deg);
+						z-index: -1;
 					}
 				}
 			}
 		}
-	}
 
-	.btn {
-			margin: 30px auto 0 auto;
+		&:hover {
+			background-color: lighten(@blue, 50%);
+
+			.price {
+				color: black;
+			}
 		}
+
+		.btn-sm {
+			float: right;
+		}
+	}
 }
 
 .main {
@@ -822,6 +831,12 @@ footer {
 					}
 				}
 			}
+		}
+	}
+
+	.offers {
+		.td {
+			display: none;
 		}
 	}
 }

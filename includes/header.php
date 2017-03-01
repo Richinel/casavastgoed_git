@@ -13,6 +13,7 @@
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
 	<script src="assets/js/cycle2.js"></script>
 	<script src="assets/js/functions.js"></script>
+	<script src="assets/js/isotope.js"></script>
 </head>
 <body>
 <?php include('includes/mobile_menu.php'); ?>
@@ -28,7 +29,7 @@
 
 					<div class="login">
 						<div class="divider"></div>
-						<a href="aventis/admin_login">Inloggen</a>
+						<a href="aventis/admin_login" target="_blank">Inloggen</a>
 					</div>
 				</div>
 			</div>

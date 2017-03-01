@@ -20,7 +20,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="wrapper main_content">
+		<div class="wrapper main_content aanbod">
 
 			<?php 
 					echo $row['content'];
