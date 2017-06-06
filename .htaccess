@@ -2,3 +2,8 @@ ErrorDocument 404 /casavastgoed_git/404.php
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
+Options +FollowSymLinks
+
+#Rewritten URL's for templating =)
+RewriteRule ^view-([a-zA-Z0-9]+)/$ view.php?id=$1
+RewriteRule ^offer-([a-zA-Z0-9]+)/$ house_offer.php?id=$1

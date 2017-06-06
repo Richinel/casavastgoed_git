@@ -19,17 +19,17 @@
 		<div class="wrapper">
 			<div class="row blocks equal">
 				<div class="row">
-					<!-- <div class="col col-2">
+					<div class="col col-2">
 						<h2>Filter</h2>
-							<div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
+							<div id="filters" class="button-group">  
+								<button class="button is-checked" data-filter="*">Alles weergeven</button>
 								<button class="button" data-filter=".rotterdam">Rotterdam</button>
-							 	<button class="button" data-filter=".transition">transition</button>
-							  	<button class="button" data-filter=".alkali, .alkaline-earth">alkali and
+							 	<button class="button" data-filter=".amsterdam">Amsterdam</button>
 							</div>
-					</div> -->
+					</div>
 
-<!-- 					<div class="col col-10">
-						<div class="row"> -->
+					<div class="col col-10">
+						<div class="row">
 							<?php
 							    include("controllers/dbconnect.php");
 							    $start      = 0;
@@ -97,7 +97,7 @@
 			            $total      = ceil( $rows / $limit );
 			            if( $id > 1 )
 			            {
-			                //Go to previous page to show previous 10 items. If its in page 1 then it is inactive
+			                //Go to previous page to show previous X items. If its in page 1 then it is inactive
 			                echo "
 			                    
 			                    <li class='prev'>
